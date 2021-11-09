@@ -1,1 +1,9 @@
-# dougs-advanced-file-system
+# Doug's Advanced File System
+TODO: write a clear intro/description/overview of this project.
+
+I plan on making a program sort of like [syncthing](https://github.com/syncthing/syncthing), and adding some features. I am a happy user of syncthing, and I've had some ideas for features I think would be cool to have a file syncing program. I don't know Go, and I think it would be a good exercise to reimplement the existing features offered by syncthing, so this will be a "new" project, and not just a fork or branch of syncthing. I have some experience using the Rust language, so that's what this project will use. I plan on reading and implementing a lot of the [syncthing specs](https://docs.syncthing.net/specs/index.html), because I have been happy with syncthing's performance and current features, and I enjoy learning how complicated protocols work under the hood.
+
+# Features
+Eventually, I'll have a bunch of bullet points here with specific features. Right now, I only have a rough idea of the features I want. Some of these may overlap with what syncthing currently offers, but I plan on tweaking and fleshing out the specifics as I implement them. I would like the ability to store encrypted "private data", but can be securing and safely cached on other devices that are part of some group or community. I would also like robust control over storage quotas of folders and users, and permissions like giving certain devices limited or temporary access to private data/files. Another cool feature would be "virtual files", which are basically scripts that are run to "generate" a file on demand, without the file needing to exist on disk. For example, you could store a library of .flac files, and create a "virtual folder" of .mp3 conversions, which is synchronized to a smartphone to save space. And last, I want settings for setting quotas on power usage (a machine could turn off when not in use, and a rasperberry pi could wake-on-lan when a user wants to connect, for example) and bandwidth usage (per user, per folder, etc.)
+
+More to come...
