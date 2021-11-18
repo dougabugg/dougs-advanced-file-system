@@ -1,0 +1,50 @@
+{
+    "my_account": {
+        "type": "Account",
+        "account_key": "KeyPair here",
+        "device_profiles": [
+            ["device_1.device_key.public_key", 1],
+            ["device_2.device_key.public_key", 1]
+        ]
+    },
+    "device_1": {
+        "type": "Device",
+        "device_key": "KeyPair here",
+        "profiles": []
+    },
+    "device_profile_1": {
+        "profile_id": 1,
+        "account_id": "my_account.account_key.public_key",
+        "device_id": "device_1.device_key.public_key",
+        "profile_index": {
+            "FromSharedFolder": {
+                "account_id": "my_account.account_key.public_key",
+                "folder_id": 1
+            }
+        }
+    },
+    "device_2": {
+        "type": "Device",
+        "device_key": "KeyPair here",
+        "profiles": []
+    },
+    "device_profile_2": {
+        "profile_id": 1,
+        "account_id": "my_account.account_key.public_key",
+        "device_id": "device_2.device_key.public_key",
+        "profile_index": {
+            "FromSharedFolder": {
+                "account_id": "my_account.account_key.public_key",
+                "folder_id": 1
+            }
+        }
+    },
+    "shared_folder_1": {
+        "account_id": "my_account.account_key.public_key",
+        "folder_id": 1,
+        "write_access": "private",
+        "read_access": "private",
+        "folder_items": [],
+        "data_blocks": []
+    },
+}
